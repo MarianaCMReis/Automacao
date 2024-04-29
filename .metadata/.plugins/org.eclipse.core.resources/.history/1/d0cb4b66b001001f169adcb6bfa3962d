@@ -1,0 +1,16 @@
+
+public class ComandoBasico {
+
+	public static void main(String[] args) {
+		String nome = "Mariana";
+		int idade = 18;
+		double peso = 56.6;
+		
+		
+		
+		
+		System.out.println("Meu nome é: " + nome + " tenho " + idade + " anos" + " e peso" + peso);
+
+	}
+
+}

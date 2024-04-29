@@ -1,0 +1,32 @@
+package If;
+
+public class Apredendoif {
+
+	public static void main(String[] args) {
+		//< menor
+		//> maior
+		//== igual
+		//= recebe
+		// || ou
+		// & e
+		// >= maior ou igual
+		// <= menor ou igual
+		// != diferente 
+		
+		
+	    int idadepode = 18;
+	    int idadenaopode = 17;
+		String passagem = " Bem vindo, você está apto para comprar sua passagem";
+		if (idadepode>= 18 & idadenaopode== <= 15) {
+			System.out.println("Condição verdadeira");
+			System.out.println(passagem);
+			
+		} else {
+			System.out.println("Você não está apto para adquirir sua passagem");
+
+		}
+		
+
+	}
+
+}

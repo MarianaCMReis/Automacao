@@ -1,0 +1,39 @@
+package If;
+
+public class Apredendoif {
+
+	public static void main(String[] args) {
+		//< menor
+		//> maior
+		//== igual
+		//= recebe
+		// || ou
+		// & e
+		// >= maior ou igual
+		// <= menor ou igual
+		// != diferente 
+		
+		
+		System.out.println("Bem Vindo ao Banco Champions");
+		System.out.println("seu boleto é de 1500 reais");
+		int boleto = 500;
+		int saldodisponivel = 2000;
+		int chequeespecial = 500;
+		int saldorestante = saldodisponivel + chequeespecial - boleto;
+		
+		if (boleto == 100 ) {
+			System.out.println("seu saldo é disponível");
+			System.out.println("Seu saldo restante é de: " + saldorestante );
+			
+			
+		} else {
+			System.out.println("Infelizmente você não possui saldo disponível");
+			System.out.println("Volte Sempre no Banco Champions");
+
+		}
+		
+		
+
+	}
+
+}

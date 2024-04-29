@@ -1,0 +1,14 @@
+package Calculadora;
+
+public class Calculadoraa {
+	Operacoes o = new Operacoes();
+	
+
+	public static void main(String[] args) {
+		Operacoes o = new Operacoes();
+
+		Operacoes.class
+
+	}
+
+}

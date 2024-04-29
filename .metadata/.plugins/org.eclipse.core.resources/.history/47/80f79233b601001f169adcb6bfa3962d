@@ -1,0 +1,15 @@
+package Calculadora;
+
+public class Calculadoraa {
+	Operacoes o = new Operacoes();
+	
+
+	public static void main(String[] args) {
+		Operacoes o = new Operacoes();
+
+		o.soma(40,56 );
+		o.multiplicacao(45, 2);
+
+	}
+
+}

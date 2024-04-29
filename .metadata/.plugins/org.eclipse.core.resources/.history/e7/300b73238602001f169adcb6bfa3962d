@@ -1,0 +1,48 @@
+package If;
+
+import java.util.Scanner;
+
+public class Apredendoif {
+
+	private static final String Sistem = null;
+
+	public static void main(String[] args) {
+		//< menor
+		//> maior
+		//== igual
+		//= recebe
+		// || ou
+		// & e
+		// >= maior ou igual
+		// <= menor ou igual
+		// != diferente 
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Bem Vindo ao Banco Champions");
+		System.out.println("seu boleto é de 1500 reais");
+		System.out.println("Digite o boleto a ser pago:");
+		int boleto = scanner.nextInt();
+		int saldodisponivel = 2000;
+		int chequeespecial = 500;
+		int saldorestante = saldodisponivel + chequeespecial - boleto;
+		
+		if (boleto == 100 ) {
+			System.out.println("seu saldo é disponível");
+			System.out.println("Deseja pagar seu boleto com o valor de:" + boleto + " reais?");
+			scanner.next();
+			System.out.println("Obrigado pela preferência");
+			System.out.println("Seu saldo restante é de: " + saldorestante );
+			System.out.println("Volte Sempre ao Banco Champions");
+			
+			
+		} else {
+			System.out.println("Infelizmente você não possui saldo disponível");
+			System.out.println("Volte Sempre ao Banco Champions");
+
+		}
+		
+		
+
+	}
+
+}

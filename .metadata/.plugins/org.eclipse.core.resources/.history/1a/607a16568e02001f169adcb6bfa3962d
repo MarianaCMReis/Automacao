@@ -1,0 +1,75 @@
+package SwitCase;
+
+import java.util.Scanner;
+
+public class Case {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Bem-Vindo à Companhia Aérea de Turismo");
+		System.out.println("Digite a data que deseja viajar:");
+		String data = scanner.next();
+		System.out.println("Destinos disponíveis no momento:");
+		System.out.println("Nova York, Estados Unidos, Munique, Manaus e São Paulo");
+		System.out.println("Por Favor Digite seu destino:");
+		String destino = scanner.next();
+		int internacional = 4000;
+		int saldo = 6000;
+		int nacional = 1500;
+		int parcela = 4;
+		
+		
+		switch (destino) {
+		case "nova york":
+			System.out.println("Ótima escolha " + destino + " é um lugar lindo");
+			System.out.println("O Valor da Passagem é de 4000 reais");
+			System.out.println("Digite o valor a ser pago:");
+			scanner.nextInt();
+			
+			int saldorestante = saldo - internacional/parcela;
+			
+			break;
+		case "estados unidos":
+			System.out.println("Ótima escolha " + destino + " é um lugar lindo");
+			System.out.println("O Valor da Passagem é de 4000 reais");
+			System.out.println("Dividimos em até 10 vezes sem juros");
+			System.out.println("Digite em quantas vezes deseja parcelar");
+			scanner.nextInt();
+			System.out.println("Digite o valor a ser pago:");
+			scanner.nextInt();
+			int saldorestante1 = saldo - internacional/parcela;
+			
+			break;
+		case "munique":
+			System.out.println("Ótima escolha " + destino + " é um lugar lindo");
+			System.out.println("O Valor da Passagem é de 4000 reais");
+			System.out.println("Digite o valor a ser pago:");
+			scanner.nextInt();
+			System.out.println("seu saldo restante é:");
+			int saldorestante11 = saldo - internacional/parcela;
+			break;
+		case "manaus":			
+			System.out.println("Ótima escolha " + destino + " é um lugar lindo");
+			System.out.println("O Valor da Passagem é de 1500 reais");
+			System.out.println("Digite o valor a ser pago:");
+			scanner.nextInt();
+			int saldorestante3 = saldo - nacional/parcela;
+			break;
+		case "sao paulo":
+			System.out.println("Ótima escolha " + destino + " é um lugar lindo");
+			System.out.println("O Valor da Passagem é de 1500 reais");
+			System.out.println("Digite o valor a ser pago:");
+			scanner.nextInt();
+			int saldorestante4 = saldo - nacional/parcela;
+
+		default:
+			System.out.println("Destino não encontrado");
+			break;
+		}
+		
+
+	}
+
+}

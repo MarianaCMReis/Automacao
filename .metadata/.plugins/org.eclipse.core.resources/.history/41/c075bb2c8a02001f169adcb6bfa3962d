@@ -1,0 +1,60 @@
+package SwitCase;
+
+import java.util.Scanner;
+
+public class Case {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Bem-Vindo à Companhia Aérea de Turismo");
+		System.out.println("Destinos disponíveis no momento:");
+		System.out.println("Nova York, Estados Unidos, Munique, Manaus e São Paulo");
+		System.out.println("Por Favor Digite seu destino:");
+		String destino = scanner.next();
+		System.out.println("Digite a data que deseja viajar:");
+		String data = scanner.next();
+		int internacional = 4000;
+		int nacional = 1500;
+		
+		
+		switch (destino) {
+		case "nova york":
+			System.out.println("Ótima escolha " + destino + " é um lugar lindo");
+			System.out.println("O Valor da Passagem é de 4000 reais");
+			System.out.println("Digite o valor a ser pago:");
+			scanner.nextInt();
+			
+			break;
+		case "estados unidos":
+			System.out.println("Ótima escolha " + destino + " é um lugar lindo");
+			System.out.println("O Valor da Passagem é de 4000 reais");
+			System.out.println("Digite o valor a ser pago:");
+			scanner.nextInt();
+			break;
+		case " munique":
+			System.out.println("Ótima escolha " + destino + " é um lugar lindo");
+			System.out.println("O Valor da Passagem é de 4000 reais");
+			System.out.println("Digite o valor a ser pago:");
+			scanner.nextInt();
+			break;
+		case "manaus":			
+			System.out.println("Ótima escolha " + destino + " é um lugar lindo");
+			System.out.println("O Valor da Passagem é de 1500 reais");
+			System.out.println("Digite o valor a ser pago:");
+			scanner.nextInt();
+			break;
+		case "sao paulo":
+			System.out.println("Ótima escolha " + destino + " é um lugar lindo");
+			System.out.println("O Valor da Passagem é de 1500 reais");
+			System.out.println("Digite o valor a ser pago:");
+			scanner.nextInt();
+		default:
+			break;
+		}
+		
+
+	}
+
+}

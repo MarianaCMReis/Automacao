@@ -1,0 +1,30 @@
+package Calculadora;
+
+public class Operacoes {
+	public void soma(int x1, int x2) {
+		
+		int resultado = x1 + x2;
+		System.out.println(resultado);
+		
+	
+		
+		
+		
+	}
+	public void multiplicacao(int x1, int x2) {
+		int resultado1 = x1* x2;
+		System.out.println(resultado1);
+	}
+	public void subtracao(int x1, int x2) {
+		int resultado2 = x1-x2;
+		System.out.println(resultado2);
+	}
+	
+	
+
+	
+		
+	}
+	
+
+
